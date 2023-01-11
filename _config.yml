@@ -17,7 +17,7 @@ subtitle                 : "Kendime Notlar"
 name                     : "Serkan Tetik"
 description              : "Kişisel ve Deneyimsel"
 url                      : "https://sekozzi.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/"# the subpath of your site, e.g. "/blog"
 repository               : "sekozzi/sekozzi.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -217,7 +217,7 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
