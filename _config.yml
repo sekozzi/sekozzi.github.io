@@ -54,7 +54,7 @@ atom_feed:
 
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : algolia # lunr (default), algolia
+search_provider          : lunr # lunr (default), algolia
 algolia:
   application_id         : #QB6HVGBSBA # YOUR_APPLICATION_ID
   index_name             : #minimal_mistakes # YOUR_INDEX_NAME
@@ -121,6 +121,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/serkan-tetik-a71a8444"
 
 # Site Footer
 footer:
@@ -136,7 +139,7 @@ footer:
       url: "https://github.com/sekozzi"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: #"https://instagram.com/mmistakes"
 
 
 # Reading Files
@@ -280,7 +283,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Istanbul
 
 
 # Plugins (previously gems:)
