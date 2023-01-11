@@ -1,7 +1,10 @@
 ---
 published: true
 layout: post
-title: "HP ILO SSL Certificate Signed Using Weak Hashing Algorithm açığının kapatılması"
+title: Redfish RESTful api ile HP ILO üzerinde SSL yenileme
+author_profile: true
+categories:
+  - ILO
 ---
 HP ILO üzerinde **SSL Certificate Signed Using Weak Hashing Algorithm** açığını kapatmak için aşağıdaki komutu ILO erişiminin olduğu bir yerden bash CLI üzerinden çalıştırırsanız ILO sertifikası yenilenecektir. 
 
