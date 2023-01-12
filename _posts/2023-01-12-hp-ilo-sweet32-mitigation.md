@@ -11,7 +11,7 @@ HP ILO üzerindeki SWEET32 açığının kapatılması için Linux sunucularda a
 Script hponcfg ile beraber ILO'ya hazırladığımız config'i geçerek ILO'yu resetleyecektir.
  
  ```bash
- #!/bin/bash
+#!/bin/bash
 ##case sensitive ignore ediliyor
 shopt -s nocasematch
 
