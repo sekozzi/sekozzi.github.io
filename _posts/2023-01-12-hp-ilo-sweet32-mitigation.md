@@ -9,7 +9,7 @@ title: HP ILO SWEET32 SSL açığının kapatılması
 HP ILO üzerindeki SWEET32 açığının kapatılması için Linux sunucularda aşağıdaki script çalıştırılabilir. Açığın kapatılabilmesi için ILO üzerinden **Security -> Encryption Settings** kısmından Enforce AES/3DES Encryption Enabled seçilmesi gerekiyor.
 
 Script hponcfg ile beraber ILO'ya hazırladığımız config'i geçerek ILO'yu resetleyecektir.
-  
+ 
   #!/bin/bash
   ##case sensitive ignore ediliyor
   shopt -s nocasematch
@@ -37,7 +37,7 @@ Script hponcfg ile beraber ILO'ya hazırladığımız config'i geçerek ILO'yu r
              rm -rf /tmp/ENFORCE_AES_VALUE.xml
              touch /tmp/ENFORCE_AES_VALUE.xml
              echo "<RIBCL VERSION=\"2.0\">" >>/tmp/ENFORCE_AES_VALUE.xml
-             echo "  <LOGIN USER_LOGIN=\"USER\" PASSWORD=\"PASS\">" >>/tmp/ENFORCE_AES_VALUE.xml
+             echo "  <LOGIN USER_LOGIN=\"USERNAME\" PASSWORD=\"PASSWORD\">" >>/tmp/ENFORCE_AES_VALUE.xml
              echo "<RIB_INFO mode=\"write\"><MOD_GLOBAL_SETTINGS>" >>/tmp/ENFORCE_AES_VALUE.xml
              echo "    <ENFORCE_AES VALUE=\"Y\"/>"  >>/tmp/ENFORCE_AES_VALUE.xml
              echo "</MOD_GLOBAL_SETTINGS></RIB_INFO>" >>/tmp/ENFORCE_AES_VALUE.xml
