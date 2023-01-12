@@ -12,13 +12,13 @@ ILO sertifikası silindiğinde ILO resetlenecek ve yeni sertifika oluşacaktır.
 
 Aşağıdaki komutu ILO erişiminin olduğu bir yerden bash CLI üzerinden çalıştırırsanız ILO sertifikası yenilenecektir. 
 
-
-	curl -kX DELETE https://ilo_ipaddress/redfish/v1/Managers/1/SecurityService/HttpsCert/ -u user:pass
-
+```bash
+curl -kX DELETE https://ilo_ipaddress/redfish/v1/Managers/1/SecurityService/HttpsCert/ -u user:pass
+```
 
 Linux içerisinde **hponcfg** ile bu işlem aşağıdaki script ile yapılabilir.
 
-
+```bash
 #!/bin/bash
 hponcfg_check=$(rpm -qa|grep -c hponcfg)
 
@@ -33,4 +33,4 @@ else
     echo "Sunucu sanal veya HP degil"
     exit 0
 fi
-
+```
